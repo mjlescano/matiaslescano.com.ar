@@ -1,0 +1,16 @@
+language: node_js
+
+node_js:
+  - "7"
+
+cache: yarn
+
+notifications:
+  email:
+    on_success: never
+    on_failure: always
+
+after_success:
+# notify Docker Hub to make a new build
+- >
+  [ "$TRAVIS_BRANCH" == 'master' ] && curl -X POST -H "Content-Type: application/json" --data '{"docker_tag_name": "latest"}' "https://registry.hub.docker.com/u/mjlescano/matiaslescano.com.ar/trigger/$DOCKER_HUB_TOKEN/"
