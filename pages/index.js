@@ -10,7 +10,6 @@ export default () => (
           align-items: center;
           justify-content: flex-start;
           min-height: 100vh;
-          // border-right: 1px solid rgba(0, 0, 0, .03);
         }
 
         h1 {
