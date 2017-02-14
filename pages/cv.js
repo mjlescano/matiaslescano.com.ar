@@ -55,10 +55,6 @@ export default () => (
         font-family: inherit;
         text-decoration: none;
         font-weight: bold;
-      }
-
-      a:hover,
-      a.active {
         color: #f6cf0d;
       }
 
@@ -120,9 +116,7 @@ export default () => (
 
     <h1>Matías Lescano</h1>
     <p className='email'>
-      <Link href='mailto:matiasj.lescano@gmail.com' prefetch={false}>
-        matiasj.lescano@gmail.com
-      </Link>
+      matiasj.lescano@gmail.com
     </p>
 
     <br />
@@ -131,58 +125,55 @@ export default () => (
 
     <h2>Work</h2>
     <p>
-      I'm currently working as <strong>Technical Lead</strong> at <Link href='https://democraciaenred.org/en' prefetch={false} rel='noopener nofollow'><strong>Democracia en Red</strong></Link>, since march 2015. We strive to improve citizens participation with it's local government using open source tech.
+      I'm currently working as <strong>Technical Lead</strong> at <Link href='https://democraciaenred.org/en' prefetch={false} rel='noopener nofollow'><strong>Democracia en Red</strong></Link>, since march 2015. We strive to improve citizens&#39; participation with local governments using open source tech.
     </p>
 
     <br />
 
-    <p>Our core project is <Link href='https://github.com/DemocracyOS/democracyos' prefetch={false} rel='noopener nofollow'><strong>DemocracyOS</strong></Link>, an open-source citizens participation platform, where you can deliberate and vote on political proposals.</p>
-    <p>Thanks to our work with DemocracyOS we've been through <Link href='https://www.fastcompany.com/3043388/the-y-combinator-chronicles/why-y-combinator-funded-a-radical-political-party-in-argentina' prefetch={false} rel='noopener nofollow'><strong>YCombinator</strong></Link> and are backed by many international philanthropic organisations like Avina, Open Society Foundations, the World Justice Project, among others.</p>
-    <p>Currently is beign used by the Argentinian Government on <Link href='https://consultapublica.argentina.gob.ar' prefetch={false} rel='noopener nofollow'><strong>consultapublica.argentina.gob.ar</strong></Link> as a delibaration platform for new rulings, and by Rosario's City Government on <Link href='https://participa.rosario.gob.ar' prefetch={false} rel='noopener nofollow'><strong>participa.rosario.gob.ar</strong></Link> to vote projects, written by the citizens, that will be part of the annual budget.</p>
+    <p>Our core project is <Link href='https://github.com/DemocracyOS/democracyos' prefetch={false} rel='noopener nofollow'><strong>DemocracyOS</strong></Link>, an open-source citizen participation platform, where you can debate and vote political proposals.</p>
+    <p>Thanks to our work with DemocracyOS we've been through <Link href='https://www.fastcompany.com/3043388/the-y-combinator-chronicles/why-y-combinator-funded-a-radical-political-party-in-argentina' prefetch={false} rel='noopener nofollow'><strong>YCombinator</strong></Link> and are backed by many international philanthropic organizations like Avina, Open Society Foundations, the World Justice Project, among others.</p>
+    <p>The platform has been used by the Argentine Government on <Link href='https://consultapublica.argentina.gob.ar' prefetch={false} rel='noopener nofollow'><strong>consultapublica.argentina.gob.ar</strong></Link> as a debate platform for new legislation, and by the city of Rosario Government on <Link href='https://participa.rosario.gob.ar' prefetch={false} rel='noopener nofollow'><strong>participa.rosario.gob.ar</strong></Link> to vote citizen-written projects that will be part of the annual budget.</p>
 
     <h2>Side-projects</h2>
 
     <h3><Link href='http://www.civicstack.org/' prefetch={false} rel='noopener nofollow'>civicstack.org</Link> <sub><Link href='https://github.com/CivicStack/civicstack' prefetch={false} rel='noopener nofollow'>&#40;src&#41;</Link></sub></h3>
-    <p>CivicStack is the place to discover and share civic open source tools. It&#39;s goal is to provide easy access of civic digital tools to organizations, activists and governments so they can innovate in their daily work. I developed mostly all the front-end, and currently we're migrating it to React.</p>
+    <p>CivicStack is the place to discover and share civic open source tools. Its goal is to provide easy access of civic digital tools to organizations, activists and governments so that they can innovate in their daily work. I developed almost the entire front-end, and we're currently migrating it to React.</p>
     <h3><Link href='http://piet.com.ar' prefetch={false} rel='noopener nofollow'>piet.com.ar</Link></h3>
-    <p>Ecommerce for PIET; classy men&#39;s clothes & apparel crafted by <Link href='https://linkedin.com/in/ian-van-lierde-0b231256' prefetch={false} rel='noopener nofollow'>Ian Van Lierde</Link>. Site&#39;s designed by <Link href='https://pazarando.com.ar/' prefetch={false} rel='noopener nofollow'>Paz Arando</Link>, and everything that's codeable by me. Did the backend with Spree, a framework written in Ruby for ecommerce solutions, and the front-end with vanilla JS, HTML, and CSS.</p>
+    <p>Ecommerce for PIET; men&#39;s clothes & apparel crafted by <Link href='https://linkedin.com/in/ian-van-lierde-0b231256' prefetch={false} rel='noopener nofollow'>Ian Van Lierde</Link>. The site was designed by <Link href='https://pazarando.com.ar/' prefetch={false} rel='noopener nofollow'>Paz Arando</Link>, and everything that's codeable by me. I did the backend with Spree, a framework written in Ruby for ecommerce solutions; and the front-end with vanilla JS, HTML, and CSS.</p>
     <h3><Link href='https://hechalaley.org' prefetch={false} rel='noopener nofollow'>hechalaley.org</Link> <sub><Link href='https://github.com/DemocraciaEnRed/billtracker' prefetch={false} rel='noopener nofollow'>&#40;src&#41;</Link></sub></h3>
-    <p>HeachaLaLey is a work in progress bill tracking utility for congresses. It let&#39;s you follow the history of changes made to a bill until it reaches the voting step. It&#39;s a conjoined effort we&#39;re conceiving at Democracia en Red with <Link href='http://en.directoriolegislativo.org' prefetch={false} rel='noopener nofollow'>Directorio Legislativo</Link>.</p>
+    <p>HechaLaLey is a work in progress bill-tracking utility for parliaments. It lets you follow the history of changes made to a bill until it reaches the voting step. It&#39;s a joined effort conceived at Democracia en Red with <Link href='http://en.directoriolegislativo.org' prefetch={false} rel='noopener nofollow'>Directorio Legislativo</Link>.</p>
 
     <h2>Skills & Expertise</h2>
 
     <h3>Development Process</h3>
     <p>I have experience working on agile teams. For 3 years we used Pivotal Tracker to work on sprints of 2 weeks at GoodPeople. Currently I manage and pririotize issues using Github Projects; a new Kanban-like interface from Github.</p>
-    <p>In this process is essential to have all the critical paths with Tests, and we run them with a continuous integration tool like TravisCI or CodeShip.</p>
-
-    <br />
 
     <h3>HTML5 & CSS3 <sub>8+ years</sub></h3>
-    <p>Always loved transforming design to code and I have a good time when discussing the possibilities of a design, and explaining the weaknesses and strengths of coding it for browsers.</p>
+    <p>I always loved transforming design into code and I enjoy discussing the possibilities of a design, and explaining their weaknesses and strengths in terms of code.</p>
     <p>Transpilers are the way to go when writing large applications, and I have solid experience working with Handlebars, Mustache, Jade, and HAML to ease the writing of HTML, and with SCSS and Stylus to write CSS.</p>
-    <p>A good example of something I done is <Link href='http://ullmannayarza.com' prefetch={false} rel='noopener nofollow'>ullmannayarza.com</Link>, it even works with JS deactivated.</p>
+    <p>A good example of something I've done is <Link href='http://ullmannayarza.com' prefetch={false} rel='noopener nofollow'>ullmannayarza.com</Link>, it even works with JS deactivated.</p>
 
     <h3>Javascript <sub>6+ years</sub></h3>
-    <p>I breath JS on my everyday life. I have experience architecturing the front-end of <Link href='http://goodpeople.com' prefetch={false} rel='noopener nofollow'>goodpeople.com</Link>, and currently leading the development of <Link href='https://github.com/DemocracyOS/democracyos' prefetch={false} rel='noopener nofollow'>DemocracyOS</Link> which includes a complete rewriting to React + Redux. As past experiences I&#39;ve used Backbone.js and I'm very proficient with jQuery.</p>
+    <p>I breath JS on my everyday life. I have experience building the front-end architecture of <Link href='http://goodpeople.com' prefetch={false} rel='noopener nofollow'>goodpeople.com</Link>, and am currently leading the development of <Link href='https://github.com/DemocracyOS/democracyos' prefetch={false} rel='noopener nofollow'>DemocracyOS</Link>, which includes a complete rewriting into React + Redux. In past experiences I&#39;ve used Backbone.js and I'm very proficient with jQuery.</p>
     <p>Nevertheless, for small projects I prefer to use Vanilla JS, with little libraries like <Link href='https://visionmedia.github.io/page.js/' prefetch={false} rel='noopener nofollow'>Page.js</Link> or <Link href='https://github.com/mjlescano/domator' prefetch={false} rel='noopener nofollow'>Domator</Link>, a DOM creation utility I made.</p>
 
     <h3>Node.js <sub>3+ years</sub></h3>
-    <p>Currently using it for back-end development at DemocracyOS. Where I&#39;m having a really good experience with it&#39;s async nature.</p>
+    <p>I'm currently using it for back-end development at DemocracyOS. Where I&#39;m having a really good experience with its async nature.</p>
 
     <h3>PHP <sub>3+ years</sub></h3>
     <p>My first professional experience with coding was with PHP, and for 3 years I gained experience with large frameworks like CakePHP and CodeIgniter, worked a lot with WordPress, and using it as-is for little projects.</p>
 
     <h3>Databases</h3>
-    <p>For 5 years I worked with relational databases like MySQL and PostgreSQL, and the last two years I gained experience with MongoDB a non-relational database.</p>
+    <p>For 5 years I worked with relational databases like MySQL and PostgreSQL, and the last two years I gained experience with MongoDB, a non-relational database.</p>
 
     <h3>DevOps / Docker</h3>
-    <p>The last year I gained a lot of experience creating and managing a Docker-based architecture for DemocracyOS. I implemented consultapublica.argentina.gob.ar and participa.rosario.gob.ar with a server running with docker-compose, and our main servers runnning on Docker Cloud with a swarm of 3 VMs running on Azure for democracyos.org</p>
+    <p>Over the last year I gained a lot of experience creating and managing a Docker-based architecture for DemocracyOS. I implemented consultapublica.argentina.gob.ar and participa.rosario.gob.ar with a server running with docker-compose, and our main servers runnning on Docker Cloud with a swarm of 3 VMs running on Azure for democracyos.org</p>
 
     <h2>Languages</h2>
     <h3>Spanish</h3>
-    <p>Native language.</p>
+    <p>Native.</p>
     <h3>English</h3>
-    <p>Full professional proficiency.</p>
+    <p>Fluent professional proficiency.</p>
 
     <h2>In the wild</h2>
     <div className='contact'>
