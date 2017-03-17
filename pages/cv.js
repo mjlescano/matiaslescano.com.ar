@@ -101,6 +101,12 @@ export default () => (
       strong {
         font-weight: bold;
       }
+
+      @media print {
+        .print-pb {
+          page-break-before: always;
+        }
+      }
     `}</style>
 
     <style jsx>{`
@@ -143,7 +149,7 @@ export default () => (
     <h3><Link href='https://hechalaley.org' prefetch={false} rel='noopener nofollow'>hechalaley.org</Link> <sub><Link href='https://github.com/DemocraciaEnRed/billtracker' prefetch={false} rel='noopener nofollow'>&#40;src&#41;</Link></sub></h3>
     <p>HechaLaLey is a work in progress bill-tracking utility for parliaments. It lets you follow the history of changes made to a bill until it reaches the voting step. It&#39;s a joined effort conceived at Democracia en Red with <Link href='http://en.directoriolegislativo.org' prefetch={false} rel='noopener nofollow'>Directorio Legislativo</Link>.</p>
 
-    <h2>Skills & Expertise</h2>
+    <h2 className='print-pb'>Skills & Expertise</h2>
 
     <h3>Development Process</h3>
     <p>I have experience working on agile teams. For 3 years we used Pivotal Tracker to work on sprints of 2 weeks at GoodPeople. Currently I manage and pririotize issues using Github Projects; a new Kanban-like interface from Github.</p>
@@ -175,7 +181,7 @@ export default () => (
     <h3>English</h3>
     <p>Fluent professional proficiency.</p>
 
-    <h2>In the wild</h2>
+    <h2 className='print-pb'>In the wild</h2>
     <div className='contact'>
       <h3>
         <Link href='https://matiaslescano.com.ar' prefetch={false}>
