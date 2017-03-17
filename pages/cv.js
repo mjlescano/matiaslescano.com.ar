@@ -121,7 +121,7 @@ export default () => (
 
     <br />
 
-    <p className='lead'>Hi! I'm Matías Lescano, full-stack developer from Buenos Aires, Argentina.</p>
+    <p className='lead'>Hi! I'm Matías Lescano, Sr. Full Stack Developer from Buenos Aires, Argentina.</p>
 
     <h2>Work</h2>
     <p>
