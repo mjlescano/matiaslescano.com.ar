@@ -1,5 +1,5 @@
+import Link from 'next/link'
 import Layout from '../components/Layout'
-import Link from 'next/prefetch'
 
 export default () => (
   <Layout>
@@ -30,18 +30,16 @@ export default () => (
         <div className='contact'>
           <Link
             href='https://ar.linkedin.com/in/matías-lescano-229533b3'
-            prefetch={false}
             rel='noopener nofollow'>
-            LinkedIn
+            <a>LinkedIn</a>
           </Link>
           <Link
             href='https://github.com/mjlescano'
-            prefetch={false}
             rel='noopener nofollow'>
-            GitHub
+            <a>GitHub</a>
           </Link>
           <Link href='mailto:matiasj.lescano@gmail.com' prefetch={false}>
-            Email
+            <a>Email</a>
           </Link>
         </div>
       </div>
