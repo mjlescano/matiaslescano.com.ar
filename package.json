@@ -1,5 +1,5 @@
 {
-  "name": "matiaslescano.com.ar",
+  "name": "matiaslescano",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "git@github.com:mjlescano/matiaslescano.com.ar.git",
@@ -10,7 +10,7 @@
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "react-markdown": "^2.4.6",
-    "strip-indent": "^2.0.0"
+    "strip-indent": "~1.0.1"
   },
   "scripts": {
     "dev": "next",
