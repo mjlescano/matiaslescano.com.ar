@@ -120,9 +120,9 @@ export default () => (
 
       Hi! I'm Matías Lescano, Senior Javascript Engineer from Buenos Aires, Argentina.
 
-      I do everything with a hands-on driven mind, and love to take  oportunities to resolve new challenges. My experience working with frontend and backend technologies allows me to deliver complete solutions, with clean design and attention to detail.
+      I like to do everything with a hands-on driven mind, and love to take  oportunities to resolve new challenges. My experience working with frontend and backend technologies allows me to deliver complete solutions, with clean design and attention to detail.
 
-      I really love coding open source and keep adding some UX knowledge to my skills.
+      Javascript and it's ecosystem is my main interest, but, I also love to improve my UX skills and be able to apply it on my everyday code.
 
       ## Work
 
