@@ -29,17 +29,15 @@ export default () => (
         <h1>Matías Lescano</h1>
         <div className='contact'>
           <Link
-            href='https://ar.linkedin.com/in/matías-lescano-229533b3'
-            rel='noopener nofollow'>
-            <a>LinkedIn</a>
-          </Link>
-          <Link
             href='https://github.com/mjlescano'
             rel='noopener nofollow'>
             <a>GitHub</a>
           </Link>
-          <Link href='mailto:matiasj.lescano@gmail.com' prefetch={false}>
+          <Link href='mailto:matiasj.lescano@gmail.com'>
             <a>Email</a>
+          </Link>
+          <Link href='/cv' prefetch>
+            <a>CV</a>
           </Link>
         </div>
       </div>
