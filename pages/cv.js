@@ -107,10 +107,9 @@ export default () => (
         font-weight: bold;
       }
 
-      @media print {
-        .print-pb {
-          page-break-before: always;
-        }
+      hr {
+        border: none;
+        page-break-before: always;
       }
     `}</style>
     <Markdown>{`
@@ -144,8 +143,6 @@ export default () => (
       ### [hechalaley.org](https://hechalaley.org) [_(src)_](https://github.com/CivicStack/civicstack)
 
       HechaLaLey is a work in progress bill-tracking utility for parliaments. It lets you follow the history of changes made to a bill until it reaches the voting step. It's a joined effort conceived at Democracia en Red with [Directorio Legislativo](http://en.directoriolegislativo.org).
-
-      <span class='print-pb'></span>
 
       ## Skills & Expertise
 
@@ -183,13 +180,9 @@ export default () => (
 
       ## Languages
 
-      ### Spanish
-      Native.
+      **Spanish:** Native.
 
-      ### English
-      Fluent professional proficiency.
-
-      <span class='print-pb'></span>
+      **English:** Fluent professional proficiency.
 
       ## In the wild
 
