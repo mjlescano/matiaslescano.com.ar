@@ -14,7 +14,16 @@ export default (props) => (
         box-sizing: border-box;
       }
 
-      html, body, h1, h2, h3, h4, h5, h6, p, button {
+      html,
+      body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      button {
         margin: 0;
         padding: 0;
         border: 0;
@@ -31,8 +40,8 @@ export default (props) => (
       }
 
       .container {
-        padding-right: 10px;
-        padding-left: 10px;
+        padding-right: 20px;
+        padding-left: 20px;
         max-width: 600px;
         width: 100%;
       }

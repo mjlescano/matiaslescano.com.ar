@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import Link from 'next/link'
 import Title from '../components/Title'
+import Markdown from '../components/Markdown'
 
 export default () => (
   <main className='container'>
@@ -40,12 +40,6 @@ export default () => (
         max-width: 680px;
       }
 
-      @media all and (min-width: 996px) {
-        .tabbed {
-          padding-left: 83px;
-        }
-      }
-
       img {
         max-width: 100%;
       }
@@ -56,9 +50,11 @@ export default () => (
         text-decoration: none;
         font-weight: bold;
         color: #f6cf0d;
+        hyphens: initial;
       }
 
       h1 {
+        margin: 0 0 .1em;
         font-size: 2em;
         line-height: 1.4;
       }
@@ -77,7 +73,20 @@ export default () => (
         line-height: 1.3;
       }
 
-      sub {
+      h4 {
+        margin-top: .5em;
+        font-size: 20px;
+        line-height: 1.4;
+      }
+
+      h5 {
+        margin-top: 0;
+        margin-bottom: 1.5em;
+        line-height: .9;
+        font-size: 1em;
+      }
+
+      h3 em {
         font-size: .8em;
         opacity: .5;
         vertical-align: inherit;
@@ -88,13 +97,9 @@ export default () => (
       }
 
       p {
-        margin: 0;
+        hyphens: auto;
+        margin: 0 0 .8em;
         font-size: 16px;
-        line-height: 1.3;
-      }
-
-      p.lead {
-        font-size: 20px;
         line-height: 1.3;
       }
 
@@ -108,103 +113,94 @@ export default () => (
         }
       }
     `}</style>
+    <Markdown>{`
+      Matías Lescano
+      ===
 
-    <style jsx>{`
-      .email {
-        margin-top: 0;
-        line-height: .9;
-      }
+      ##### _matiasj.lescano@gmail.com_
 
-      .contact :global(a) {
-        margin-right: .8em;
-      }
-    `}</style>
+      Hi! I'm Matías Lescano, Senior Javascript Engineer from Buenos Aires, Argentina.
 
-    <h1>Matías Lescano</h1>
-    <p className='email'>
-      matiasj.lescano@gmail.com
-    </p>
+      I do everything with a hands-on driven mind, and love to take  oportunities to resolve new challenges. My experience working with frontend and backend technologies allows me to deliver complete solutions, with clean design and attention to detail.
 
-    <br />
+      I really love coding open source and keep adding some UX knowledge to my skills.
 
-    <p className='lead'>Hi! I'm Matías Lescano, Sr. Full Stack Developer from Buenos Aires, Argentina.</p>
+      ## Work
 
-    <h2>Work</h2>
-    <p>
-      I'm currently working as <strong>Technical Lead</strong> at <Link href='https://democraciaenred.org/en' rel='noopener nofollow'><a><strong>Democracia en Red</strong></a></Link>, since march 2015. We strive to improve citizens&#39; participation with local governments using open source tech.
-    </p>
+      I'm currently working as **Technical Lead** at [**Democracia en Red**](https://democraciaenred.org/en), since march 2015. We strive to improve citizens' participation with local governments using open source tech.
 
-    <br />
+      Our core project is [**DemocracyOS**](https://github.com/DemocracyOS/democracyos), an open source, free software, citizen participation platform, where you can debate and vote political proposals. We've been through [**YCombinator**](https://www.fastcompany.com/3043388/the-y-combinator-chronicles/why-y-combinator-funded-a-radical-political-party-in-argentina), and after that, we implemented it with the Argentine Government at [**consultapublica.argentina.gob.ar**](https://consultapublica.argentina.gob.ar) as a debate platform for new legislation. And, with the city of Rosario's Government on [**participa.rosario.gob.ar**](https://participa.rosario.gob.ar) to let the people vote citizen-written projects that will be part of the annual budget.
 
-    <p>Our core project is <Link href='https://github.com/DemocracyOS/democracyos' rel='noopener nofollow'><a><strong>DemocracyOS</strong></a></Link>, an open-source citizen participation platform, where you can debate and vote political proposals.</p>
-    <p>Thanks to our work with DemocracyOS we've been through <Link href='https://www.fastcompany.com/3043388/the-y-combinator-chronicles/why-y-combinator-funded-a-radical-political-party-in-argentina' rel='noopener nofollow'><a><strong>YCombinator</strong></a></Link> and are backed by many international philanthropic organizations like Avina, Open Society Foundations, the World Justice Project, among others.</p>
-    <p>The platform has been used by the Argentine Government on <Link href='https://consultapublica.argentina.gob.ar' rel='noopener nofollow'><a><strong>consultapublica.argentina.gob.ar</strong></a></Link> as a debate platform for new legislation, and by the city of Rosario Government on <Link href='https://participa.rosario.gob.ar' rel='noopener nofollow'><a><strong>participa.rosario.gob.ar</strong></a></Link> to vote citizen-written projects that will be part of the annual budget.</p>
+      ## Side-projects
 
-    <h2>Side-projects</h2>
+      ### [civicstack.org](http://www.civicstack.org/) [_(src)_](https://github.com/CivicStack/civicstack)
 
-    <h3><Link href='http://www.civicstack.org/' rel='noopener nofollow'><a>civicstack.org</a></Link> <sub><Link href='https://github.com/CivicStack/civicstack' rel='noopener nofollow'><a>&#40;src&#41;</a></Link></sub></h3>
-    <p>CivicStack is the place to discover and share civic open source tools. Its goal is to provide easy access of civic digital tools to organizations, activists and governments so that they can innovate in their daily work. I developed almost the entire front-end, and we're currently migrating it to React.</p>
-    <h3><Link href='http://piet.com.ar' rel='noopener nofollow'><a>piet.com.ar</a></Link></h3>
-    <p>Ecommerce for PIET; men&#39;s clothes & apparel crafted by <Link href='https://linkedin.com/in/ian-van-lierde-0b231256' rel='noopener nofollow'><a>Ian Van Lierde</a></Link>. The site was designed by <Link href='https://pazarando.com.ar/' rel='noopener nofollow'><a>Paz Arando</a></Link>, and everything that's codeable by me. I did the backend with Spree, a framework written in Ruby for ecommerce solutions; and the front-end with vanilla JS, HTML, and CSS.</p>
-    <h3><Link href='https://hechalaley.org' rel='noopener nofollow'><a>hechalaley.org</a></Link> <sub><Link href='https://github.com/DemocraciaEnRed/billtracker' rel='noopener nofollow'><a>&#40;src&#41;</a></Link></sub></h3>
-    <p>HechaLaLey is a work in progress bill-tracking utility for parliaments. It lets you follow the history of changes made to a bill until it reaches the voting step. It&#39;s a joined effort conceived at Democracia en Red with <Link href='http://en.directoriolegislativo.org' rel='noopener nofollow'><a>Directorio Legislativo</a></Link>.</p>
+      CivicStack is the place to discover and share civic open source tools. Its goal is to provide easy access of tools to organizations, activists and governments so that they can innovate in their daily work. I developed almost the entire front-end, and we're currently migrating it to React.
 
-    <h2 className='print-pb'>Skills & Expertise</h2>
+      ### [piet.com.ar](http://piet.com.ar)
 
-    <h3>Development Process</h3>
-    <p>I have experience working on agile teams. For 3 years we used Pivotal Tracker to work on sprints of 2 weeks at GoodPeople. Currently I manage and pririotize issues using Github Projects; a new Kanban-like interface from Github.</p>
+      Ecommerce for PIET; men's clothes & apparel crafted by [Ian Van Lierde](https://linkedin.com/in/ian-van-lierde-0b231256). The site was designed by [Paz Arando](https://pazarando.com.ar/), and everything that's codeable by me. I did the backend with Spree, a framework written in Ruby for ecommerce solutions; and the front-end with vanilla JS, HTML, and CSS.
 
-    <h3>HTML5 & CSS3 <sub>8+ years</sub></h3>
-    <p>I always loved transforming design into code and I enjoy discussing the possibilities of a design, and explaining their weaknesses and strengths in terms of code.</p>
-    <p>Transpilers are the way to go when writing large applications, and I have solid experience working with Handlebars, Mustache, Jade, and HAML to ease the writing of HTML, and with SCSS and Stylus to write CSS.</p>
-    <p>A good example of something I've done is <Link href='http://ullmannayarza.com' rel='noopener nofollow'><a>ullmannayarza.com</a></Link>, it even works with JS deactivated.</p>
+      ### [hechalaley.org](https://hechalaley.org) [_(src)_](https://github.com/CivicStack/civicstack)
 
-    <h3>Javascript <sub>6+ years</sub></h3>
-    <p>I breath JS on my everyday life. I have experience building the front-end architecture of <Link href='http://goodpeople.com' rel='noopener nofollow'><a>goodpeople.com</a></Link>, and am currently leading the development of <Link href='https://github.com/DemocracyOS/democracyos' rel='noopener nofollow'><a>DemocracyOS</a></Link>, which includes a complete rewriting into React + Redux. In past experiences I&#39;ve used Backbone.js and I'm very proficient with jQuery.</p>
-    <p>Nevertheless, for small projects I prefer to use Vanilla JS, with little libraries like <Link href='https://visionmedia.github.io/page.js/' rel='noopener nofollow'><a>Page.js</a></Link> or <Link href='https://github.com/mjlescano/domator' rel='noopener nofollow'><a>Domator</a></Link>, a DOM creation utility I made.</p>
+      HechaLaLey is a work in progress bill-tracking utility for parliaments. It lets you follow the history of changes made to a bill until it reaches the voting step. It's a joined effort conceived at Democracia en Red with [Directorio Legislativo](http://en.directoriolegislativo.org).
 
-    <h3>Node.js <sub>3+ years</sub></h3>
-    <p>I'm currently using it for back-end development at DemocracyOS. Where I&#39;m having a really good experience with its async nature.</p>
+      <span class='print-pb'></span>
 
-    <h3>PHP <sub>3+ years</sub></h3>
-    <p>My first professional experience with coding was with PHP, and for 3 years I gained experience with large frameworks like CakePHP and CodeIgniter, worked a lot with WordPress, and using it as-is for little projects.</p>
+      ## Skills & Expertise
 
-    <h3>Databases</h3>
-    <p>For 5 years I worked with relational databases like MySQL and PostgreSQL, and the last two years I gained experience with MongoDB, a non-relational database.</p>
+      ### Development Process
 
-    <h3>DevOps / Docker</h3>
-    <p>Over the last year I gained a lot of experience creating and managing a Docker-based architecture for DemocracyOS. I implemented consultapublica.argentina.gob.ar and participa.rosario.gob.ar with a server running with docker-compose, and our main servers runnning on Docker Cloud with a swarm of 3 VMs running on Azure for democracyos.org</p>
+      I have experience working on agile teams. For 3 years we used Pivotal Tracker to work on sprints of 2 weeks at GoodPeople. Currently I manage and pririotize issues using Github Projects; a new Kanban-like interface from Github.
 
-    <h2>Languages</h2>
-    <h3>Spanish</h3>
-    <p>Native.</p>
-    <h3>English</h3>
-    <p>Fluent professional proficiency.</p>
+      ### HTML5 & CSS3 _8+ years_
 
-    <h2 className='print-pb'>In the wild</h2>
-    <div className='contact'>
-      <h3>
-        <Link href='https://matiaslescano.com.ar'><a>
-          matiaslescano.com.ar
-        </a></Link>
-      </h3>
-      <p>my personal site.</p>
-      <h3>
-        <Link
-          href='https://ar.linkedin.com/in/matías-lescano-229533b3'
-          rel='noopener nofollow'><a>
-          linkedin.com/in/matías-lescano-229533b3
-        </a></Link>
-      </h3>
-      <p>my LinkedIn profile, here's my entire work history and studies. </p>
-      <h3>
-        <Link
-          href='https://github.com/mjlescano'
-          rel='noopener nofollow'><a>
-          github.com/mjlescano
-        </a></Link>
-      </h3>
-      <p>I mostly do open-source, and Github is where all my code lives.</p>
-    </div>
+      I always loved transforming design into code and I enjoy discussing the possibilities of a design, and explaining their weaknesses and strengths in terms of code.
+
+      Transpilers are the way to go when writing large applications, and I have solid experience working with Handlebars, Mustache, Jade, and HAML to ease the writing of HTML, and with SCSS and Stylus to write CSS. A good example of something I've done is [ullmannayarza.com](http://ullmannayarza.com), it even works with JS deactivated.
+
+      ### Javascript _7+ years_
+
+      I breath JS on my everyday life. I have experience building the front-end architecture of [goodpeople.com](https://goodpeople.com), and am currently leading the development of [DemocracyOS](https://github.com/DemocracyOS/democracyos), which includes a complete rewriting into React + Redux. In past experiences I've used Backbone.js and jQuery a lot.
+
+      Nevertheless, for small projects I prefer to use Vanilla JS, with little libraries like [Page.js](https://visionmedia.github.io/page.js/) or [Domator](https://github.com/mjlescano/domator), a DOM creation utility I made.
+
+      ### Node.js _3+ years_
+
+      I'm currently using it for back-end development at DemocracyOS. Where I'm having a really good experience with its async nature.
+
+      ### PHP _3+ years_
+
+      My first professional experience with coding was with PHP, and for 3 years I gained experience with large frameworks like CakePHP and CodeIgniter, worked a lot with WordPress, and using it as-is for little projects.
+
+      ### Databases
+
+      For 5 years I worked with relational databases like MySQL and PostgreSQL, and the last two years I gained experience with MongoDB, a non-relational database.
+
+      ### DevOps / Docker
+
+      Over the last year I gained a lot of experience creating and managing a Docker-based architecture for DemocracyOS. I implemented consultapublica.argentina.gob.ar and participa.rosario.gob.ar with a server running with docker-compose, and our main servers runnning on Docker Cloud with a swarm of VMs running on Azure for democracyos.org.
+
+      ## Languages
+
+      ### Spanish
+      Native.
+
+      ### English
+      Fluent professional proficiency.
+
+      <span class='print-pb'></span>
+
+      ## In the wild
+
+      ### [matiaslescano.com.ar](https://matiaslescano.com.ar)
+      my personal site.
+
+      ### [linkedin.com/in/matías-lescano-229533b3](https://ar.linkedin.com/in/matías-lescano-229533b3)
+      my LinkedIn profile, here's my entire work history and studies.
+
+      ### [github.com/mjlescano](https://github.com/mjlescano)
+      I mostly do open source, and Github is where all my code lives.
+    `}</Markdown>
   </main>
 )
