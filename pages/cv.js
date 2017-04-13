@@ -60,7 +60,7 @@ export default () => (
       }
 
       h2 {
-        margin-top: 1.5em;
+        margin-top: 1em;
         margin-bottom: .3em;
         font-size: 1.5em;
         line-height: 1.4;
@@ -120,7 +120,7 @@ export default () => (
 
       Hi! I'm Matías Lescano, Senior Javascript Engineer from Buenos Aires, Argentina.
 
-      I like to do everything with a hands-on driven mind, and love to take  oportunities to resolve new challenges. My experience working with frontend and backend technologies allows me to deliver complete solutions, with clean design and attention to detail.
+      I like to do everything with a hands-on driven mind, and love to take  opportunities to resolve new challenges. My experience working with frontend and backend technologies allows me to deliver complete solutions, with clean design and attention to detail.
 
       Javascript and it's ecosystem is my main interest, but, I also love to improve my UX skills and be able to apply it on my everyday code.
 
@@ -189,7 +189,7 @@ export default () => (
       ### [matiaslescano.com.ar](https://matiaslescano.com.ar)
       my personal site.
 
-      ### [linkedin.com/in/matías-lescano-229533b3](https://ar.linkedin.com/in/matías-lescano-229533b3)
+      ### [linkedin.com/in/mjlescano](https://ar.linkedin.com/in/matías-lescano-229533b3)
       my LinkedIn profile, here's my entire work history and studies.
 
       ### [github.com/mjlescano](https://github.com/mjlescano)
