@@ -166,6 +166,8 @@ export default () => (
 
       I'm currently using it for back-end development at DemocracyOS. Where I'm having a really good experience with its async nature.
 
+      For example, I did [DemocracyOS/manager](https://github.com/DemocracyOS/manager), an API for managing multiple instances for DemocracyOS that leverages [Deis](http://deis.io/) for independent VM deployments. And, a more current example is the complete rewrite of the API for DemocracyOS that can be seen [here](https://github.com/DemocracyOS/democracyos/tree/master/lib/api-v2).
+
       ### PHP _3+ years_
 
       My first professional experience with coding was with PHP, and for 3 years I gained experience with large frameworks like CakePHP and CodeIgniter, worked a lot with WordPress, and using it as-is for little projects.
