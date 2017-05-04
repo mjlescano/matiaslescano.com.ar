@@ -144,6 +144,8 @@ export default () => (
 
       HechaLaLey is a work in progress bill-tracking utility for parliaments. It lets you follow the history of changes made to a bill until it reaches the voting step. It's a joined effort conceived at Democracia en Red with [Directorio Legislativo](http://en.directoriolegislativo.org).
 
+      ---
+
       ## Skills & Expertise
 
       ### Development Process
@@ -179,6 +181,8 @@ export default () => (
       ### DevOps / Docker
 
       Over the last year I gained a lot of experience creating and managing a Docker-based architecture for DemocracyOS. I implemented consultapublica.argentina.gob.ar and participa.rosario.gob.ar with a server running with docker-compose, and our main servers runnning on Docker Cloud with a swarm of VMs running on Azure for democracyos.org.
+
+      ---
 
       ## Languages
 
