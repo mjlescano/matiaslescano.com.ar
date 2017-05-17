@@ -1,3 +1,4 @@
+import moment from 'moment'
 import Head from 'next/head'
 import Title from '../components/Title'
 import Markdown from '../components/Markdown'
@@ -184,11 +185,13 @@ export default () => (
 
       ---
 
-      ## Languages
+      ## Attributes
 
-      **Spanish:** Native.
+      ### Birthday
+      8th Dec 1989 _(${moment([1989, 11, 8]).fromNow(true)})_
 
-      **English:** Fluent professional proficiency.
+      ### Languages
+      Native _**Spanish**_ speaker, and fluent professional proficiency with _**English**_.
 
       ## In the wild
 
