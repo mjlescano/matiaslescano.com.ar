@@ -36,7 +36,7 @@ export default (props) => (
         line-height: 1;
         color: #525252;
         text-rendering: geometricPrecision;
-        backgorund-color: #fafafa;
+        background-color: #fafafa;
       }
 
       .container {
