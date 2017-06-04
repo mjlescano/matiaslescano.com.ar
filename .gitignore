@@ -2,4 +2,5 @@
 .next
 /node_modules
 /now.json
+/out
 npm-debug.log

@@ -11,8 +11,7 @@
     "next": "~3.0.0-beta9",
     "react": "~15.5.4",
     "react-dom": "~15.5.4",
-    "react-markdown": "~2.5.0",
-    "strip-indent": "~2.0.0"
+    "react-markdown": "~2.5.0"
   },
   "scripts": {
     "check": "check-node-version --package",

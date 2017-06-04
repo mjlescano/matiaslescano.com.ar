@@ -1,5 +1,4 @@
 import ReactMarkdown from 'react-markdown'
-import stripIndent from 'strip-indent'
 
 export default ({ children }) => (
   <div className='markdown'>
@@ -17,4 +16,17 @@ function parse (child) {
   }
 
   return <ReactMarkdown source={stripIndent(child)} />
+}
+
+function stripIndent (str) {
+  const match = str.match(/^[ \t]*(?=\S)/gm)
+
+  if (!match) {
+    return str
+  }
+
+  const indent = Math.min.apply(Math, match.map((x) => x.length))
+  const re = new RegExp(`^[ \\t]{${indent}}`, 'gm')
+
+  return indent > 0 ? str.replace(re, '') : str
 }
