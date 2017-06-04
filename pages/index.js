@@ -37,7 +37,7 @@ export default () => (
             <a>Email</a>
           </Link>
           <Link href='/cv' prefetch>
-            <a>CV</a>
+            <a>Résumé</a>
           </Link>
         </div>
       </div>

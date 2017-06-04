@@ -5,11 +5,10 @@ export default (props) => (
   <div>
     <Head>
       <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+      <link href='https://fonts.googleapis.com/css?family=Nunito:300,700|Source+Code+Pro:400,700' rel='stylesheet' />
     </Head>
     <Title />
     <style jsx global>{`
-      @import url('https://fonts.googleapis.com/css?family=Nunito:300,700');
-
       * {
         box-sizing: border-box;
       }
@@ -32,17 +31,93 @@ export default (props) => (
 
       body {
         font-size: 16px;
-        font-family: Hack, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+        font-family: 'Nunito', sans-serif;
         line-height: 1;
         color: #525252;
         text-rendering: geometricPrecision;
         background-color: #fafafa;
       }
 
+      img {
+        max-width: 100%;
+      }
+
+      a {
+        font-family: inherit;
+        text-decoration: none;
+        hyphens: initial;
+        color: #f6cf0d;
+        font-weight: bold;
+      }
+
+      a:hover {
+        color: #fafafa;
+        background-color: #f6cf0d;
+      }
+
+      h1 {
+        margin: 0 0 .1em;
+        font-size: 2em;
+        line-height: 1.4;
+      }
+
+      h2 {
+        margin-top: 1em;
+        margin-bottom: .3em;
+        font-size: 1.5em;
+        line-height: 1.4;
+      }
+
+      h3 {
+        margin: 0;
+        font-weight: bold;
+        font-size: 1em;
+        line-height: 1.3;
+      }
+
+      h4 {
+        margin-top: .5em;
+        font-size: 20px;
+        line-height: 1.4;
+      }
+
+      h5 {
+        margin-top: 0;
+        margin-bottom: 1.5em;
+        line-height: .9;
+        font-size: 1em;
+      }
+
+      h3 em {
+        font-size: .8em;
+        opacity: .5;
+        vertical-align: inherit;
+      }
+
+      p + h3 {
+        margin-top: .5em;
+      }
+
+      p {
+        hyphens: auto;
+        margin: 0 0 .8em;
+        font-size: 16px;
+        line-height: 1.3;
+      }
+
+      strong {
+        font-weight: bold;
+      }
+
+      hr {
+        border: none;
+        page-break-before: always;
+      }
+
       .container {
         padding-right: 20px;
         padding-left: 20px;
-        max-width: 600px;
+        max-width: 680px;
         width: 100%;
       }
 
@@ -51,45 +126,6 @@ export default (props) => (
           margin-left: 38.5%;
           transform: translateX(-50%);
         }
-      }
-
-      img {
-        max-width: 100%;
-      }
-
-      a {
-        color: inherit;
-        font-family: inherit;
-        text-decoration: none;
-      }
-
-      a:hover,
-      a.active {
-        color: #f6cf0d;
-      }
-
-      h1 {
-        font-size: 30px;
-        line-height: 1.4;
-      }
-
-      h2 {
-        font-size: 24px;
-        line-height: 1.4;
-      }
-
-      p {
-        font-size: 20px;
-        line-height: 1.3;
-      }
-
-      h1 + p,
-      h2 + p {
-        margin-top: 10px;
-      }
-
-      strong {
-        font-weight: bold;
       }
     `}</style>
     { props.children }
