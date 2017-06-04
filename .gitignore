@@ -2,3 +2,4 @@
 .next
 /node_modules
 /now.json
+npm-debug.log

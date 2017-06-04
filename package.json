@@ -6,6 +6,7 @@
   "author": "Matías Lescano <mjlescano@protonmail.com>",
   "license": "CC-BY-4.0",
   "dependencies": {
+    "check-node-version": "~2.1.0",
     "moment": "~2.18.1",
     "next": "~3.0.0-beta9",
     "react": "~15.5.4",
@@ -14,10 +15,11 @@
     "strip-indent": "~2.0.0"
   },
   "scripts": {
-    "dev": "next",
-    "build": "next build && next export",
-    "start": "next start",
-    "test": "node test"
+    "check": "check-node-version --package",
+    "dev": "npm run check && next",
+    "build": "npm run check && next build && next export",
+    "start": "npm run check && next start",
+    "test": "npm run check && node test"
   },
   "devDependencies": {
     "eslint": "~3.19.0",
