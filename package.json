@@ -6,22 +6,22 @@
   "author": "Matías Lescano <mjlescano@protonmail.com>",
   "license": "CC-BY-4.0",
   "dependencies": {
-    "moment": "^2.18.1",
-    "next": "~2.4.0",
-    "react": "^15.5.4",
-    "react-dom": "^15.5.4",
-    "react-markdown": "^2.5.0",
+    "moment": "~2.18.1",
+    "next": "~3.0.0-beta6",
+    "react": "~15.5.4",
+    "react-dom": "~15.5.4",
+    "react-markdown": "~2.5.0",
     "strip-indent": "~2.0.0"
   },
   "scripts": {
     "dev": "next",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
     "test": "node test"
   },
   "devDependencies": {
-    "eslint": "^3.19.0",
-    "eslint-config-democracyos": "^1.2.1",
+    "eslint": "~3.19.0",
+    "eslint-config-democracyos": "~1.2.1",
     "glob": "~7.1.2"
   },
   "engines": {
