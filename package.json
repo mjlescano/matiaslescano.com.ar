@@ -10,7 +10,7 @@
     "moment": "~2.18.1",
     "next": "~3.0.0-beta9",
     "react": "~15.5.4",
-    "react-dom": "~15.5.4",
+    "react-dom": "~15.6.1",
     "react-markdown": "~2.5.0"
   },
   "scripts": {
