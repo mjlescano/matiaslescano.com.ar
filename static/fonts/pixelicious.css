@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'Pixelicious';
+  src: url('pixelicious.woff2') format('woff2'),
+       url('pixelicious.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
