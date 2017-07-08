@@ -1,5 +1,5 @@
 {
-  "name": "matiaslescano",
+  "name": "matiaslescano.com.ar",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "git@github.com:mjlescano/matiaslescano.com.ar.git",
@@ -9,17 +9,17 @@
     "check-node-version": "~2.1.0",
     "moment": "~2.18.1",
     "next": "~3.0.0-beta9",
-    "react": "~15.5.4",
+    "react": "~15.6.1",
     "react-dom": "~15.6.1",
     "react-markdown": "~2.5.0"
   },
   "scripts": {
     "check": "check-node-version --package",
     "dev": "npm run check && next",
-    "build": "npm run check && next build && next export",
+    "clean": "rm -rf out",
+    "build": "npm run check && npm run clean && next build && next export",
     "start": "npm run check && next start",
-    "test": "npm run check && node test",
-    "deploy": "npm run build && cp ./now.json ./out/now.json && $(cd out && now && now alias)"
+    "test": "npm run check && node test"
   },
   "devDependencies": {
     "eslint": "~3.19.0",
