@@ -9,7 +9,7 @@
     "check-node-version": "~2.1.0",
     "moment": "~2.18.1",
     "next": "~3.2.2",
-    "react": "~15.6.1",
+    "react": "~16.0.0",
     "react-dom": "~15.5.4",
     "react-markdown": "~2.5.0"
   },
