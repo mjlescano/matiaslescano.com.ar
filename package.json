@@ -11,7 +11,7 @@
     "next": "~3.2.2",
     "react": "~15.6.1",
     "react-dom": "~15.6.1",
-    "react-markdown": "~2.5.0"
+    "react-markdown": "~3.0.0"
   },
   "scripts": {
     "check": "check-node-version --package",
