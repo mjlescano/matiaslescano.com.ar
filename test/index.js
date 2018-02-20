@@ -1,13 +1,15 @@
 const spawn = require('child_process').spawn
 
+const SITE = 'matiaslescano.com.ar'
+
 const build = spawn('npm', ['run', 'build'])
 
-console.log('· Running tests for matiaslescano.com.ar')
+console.log(`· Running tests for ${SITE}`)
 
 console.log('  * App should build.')
 
 build.stderr.on('data', (data) => {
-  console.error(data)
+  console.error(data.toString())
 })
 
 build.on('close', (code) => {
@@ -17,6 +19,6 @@ build.on('close', (code) => {
   }
 
   console.log('  + App builded correctly :)')
-  console.log('· All tests finished for matiaslescano.com.ar')
+  console.log(`· All tests finished for ${SITE}`)
   process.exit(code) // eslint-disable-line no-process-exit
 })

@@ -1,32 +1,35 @@
 import moment from 'moment'
 import Link from 'next/link'
+import css from 'styled-jsx/css'
 import Layout from '../components/Layout'
 import Markdown from '../components/Markdown'
 
+const styles = css`
+  main {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+
+  .breadcrumbs {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: .85em;
+  }
+
+  .breadcrumbs a {
+    font-weight: 300;
+  }
+
+  @media print {
+    .breadcrumbs {
+      display: none;
+    }
+  }
+`
+
 export default () => (
   <Layout>
-    <style jsx>{`
-      main {
-        padding-top: 35px;
-        padding-bottom: 35px;
-      }
-
-      .breadcrumbs {
-        padding-top: 15px;
-        padding-bottom: 15px;
-        font-size: .85em;
-      }
-
-      .breadcrumbs a {
-        font-weight: 300;
-      }
-
-      @media print {
-        .breadcrumbs {
-          display: none;
-        }
-      }
-    `}</style>
+    <style jsx>{styles}</style>
     <div className='breadcrumbs container'>
       <Link href='/'><a>&lt; go back</a></Link>
     </div>
