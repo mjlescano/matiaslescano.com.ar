@@ -39,9 +39,11 @@ export default () => (
           <Link href='mailto:matiasj.lescano@gmail.com'>
             <a>Email</a>
           </Link>
+          {/*
           <Link href='/cv' prefetch>
             <a>Résumé</a>
           </Link>
+          */}
         </div>
       </div>
     </main>
